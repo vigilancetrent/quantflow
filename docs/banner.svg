@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="QuantFlow — Modular ML and RL for financial markets">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.0"/>
+      <stop offset="20%" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2937" stroke-width="0.5" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+
+  <!-- Subtle radial glow on the right -->
+  <circle cx="980" cy="160" r="260" fill="#22d3ee" opacity="0.06"/>
+
+  <!-- Wordmark -->
+  <g font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, system-ui, sans-serif">
+    <!-- Logo glyph: a tight signal-like mark -->
+    <g transform="translate(60, 88)">
+      <rect x="0" y="14" width="6" height="32" fill="#22d3ee" rx="1"/>
+      <rect x="12" y="2" width="6" height="56" fill="#38bdf8" rx="1"/>
+      <rect x="24" y="22" width="6" height="20" fill="#a78bfa" rx="1"/>
+      <rect x="36" y="10" width="6" height="42" fill="#22d3ee" rx="1"/>
+      <rect x="48" y="26" width="6" height="12" fill="#38bdf8" rx="1"/>
+    </g>
+
+    <!-- QuantFlow wordmark -->
+    <text x="140" y="142" font-size="78" font-weight="800" fill="#f8fafc" letter-spacing="-2.5">
+      Quant<tspan fill="url(#accent)">Flow</tspan>
+    </text>
+
+    <!-- Tagline -->
+    <text x="142" y="184" font-size="22" font-weight="500" fill="#94a3b8" letter-spacing="0.2">
+      Modular ML &amp; RL for financial markets
+    </text>
+
+    <!-- Pill badges -->
+    <g transform="translate(142, 218)">
+      <g>
+        <rect width="166" height="32" rx="16" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.4"/>
+        <text x="83" y="21" font-size="13" font-weight="600" fill="#22d3ee" text-anchor="middle">20 modern indicators</text>
+      </g>
+      <g transform="translate(178, 0)">
+        <rect width="180" height="32" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.4"/>
+        <text x="90" y="21" font-size="13" font-weight="600" fill="#38bdf8" text-anchor="middle">walk-forward by default</text>
+      </g>
+      <g transform="translate(370, 0)">
+        <rect width="146" height="32" rx="16" fill="#0f172a" stroke="#a78bfa" stroke-opacity="0.4"/>
+        <text x="73" y="21" font-size="13" font-weight="600" fill="#a78bfa" text-anchor="middle">gym-compatible RL</text>
+      </g>
+    </g>
+
+    <!-- Tag-line bottom -->
+    <text x="142" y="288" font-size="13" font-weight="400" fill="#475569" letter-spacing="1.4">
+      52 PASSING TESTS  ·  PYTHON 3.10+  ·  MIT LICENSED
+    </text>
+  </g>
+
+  <!-- Right-side stylised price/feature chart -->
+  <g transform="translate(680, 80)">
+    <!-- Chart frame baseline -->
+    <line x1="0" y1="180" x2="460" y2="180" stroke="#1f2937" stroke-width="1"/>
+
+    <!-- Filled area under main line -->
+    <path d="M 0 140 L 30 130 L 60 145 L 90 110 L 120 95 L 150 120 L 180 80 L 210 70
+             L 240 95 L 270 60 L 300 50 L 330 70 L 360 40 L 390 35 L 420 55 L 460 30
+             L 460 180 L 0 180 Z"
+          fill="url(#fill)"/>
+
+    <!-- Main line -->
+    <path d="M 0 140 L 30 130 L 60 145 L 90 110 L 120 95 L 150 120 L 180 80 L 210 70
+             L 240 95 L 270 60 L 300 50 L 330 70 L 360 40 L 390 35 L 420 55 L 460 30"
+          fill="none" stroke="url(#line)" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Secondary indicator line (signal) -->
+    <path d="M 0 155 L 60 140 L 120 110 L 180 100 L 240 105 L 300 80 L 360 70 L 420 65 L 460 50"
+          fill="none" stroke="#a78bfa" stroke-opacity="0.55" stroke-width="2"
+          stroke-dasharray="4 6" stroke-linecap="round"/>
+
+    <!-- Markers on key bars -->
+    <g fill="#22d3ee">
+      <circle cx="180" cy="80" r="4"/>
+      <circle cx="300" cy="50" r="4"/>
+      <circle cx="460" cy="30" r="5"/>
+    </g>
+
+    <!-- Tiny axis ticks -->
+    <g fill="#475569" font-family="ui-monospace, 'SF Mono', Consolas, monospace" font-size="10">
+      <text x="0" y="200">t-N</text>
+      <text x="220" y="200" text-anchor="middle">t-N/2</text>
+      <text x="460" y="200" text-anchor="end">now</text>
+    </g>
+  </g>
+
+  <!-- Bottom hairline -->
+  <rect x="0" y="318" width="1200" height="2" fill="url(#accent)" opacity="0.6"/>
+</svg>

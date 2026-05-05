@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/banner.svg" alt="QuantFlow — Modular ML and RL for financial markets" width="100%">
+
 # QuantFlow
 
 ### A next-generation, modular ML/RL library purpose-built for financial markets.

@@ -40,3 +40,7 @@ checkpoints/
 *.pt
 *.pkl
 mlruns/
+
+# Tooling sessions
+.claude/
+log/
